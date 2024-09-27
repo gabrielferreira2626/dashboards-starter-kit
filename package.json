@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Findmore Component",
   "private": true,
-  "browser": "dist/main.js",
+  "browser": "dist/template.js",
   "author": "Gabriel Ferreira",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production"
@@ -11,6 +11,7 @@
   "dependencies": {
     "@types/xrm": "^9.0.81",
     "axios": "^1.7.7",
+    "generate-json-webpack-plugin": "^2.0.0",
     "react": "^18.3.1"
   },
   "devDependencies": {
