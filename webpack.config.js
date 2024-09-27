@@ -1,16 +1,13 @@
 const webpack = require("webpack");
 const remoteComponentConfig = require("./remote-component.config").resolve;
-const GenerateJsonPlugin = require('generate-json-webpack-plugin');
+const GenerateJsonPlugin = require("generate-json-webpack-plugin");
 
 const externals = Object.keys(remoteComponentConfig).reduce((obj, key) => ({...obj, [key]: key}), {});
 
 const ComponentTemplate = require("./src/Template.json");
 
 module.exports = {
- plugins: [
-  new webpack.EnvironmentPlugin({ "process.env.NODE_ENV": process.env.NODE_ENV }),
-  new GenerateJsonPlugin('template.json', ComponentTemplate),
- ],
+ plugins: [new webpack.EnvironmentPlugin({"process.env.NODE_ENV": process.env.NODE_ENV}), new GenerateJsonPlugin("template.json", ComponentTemplate)],
  entry: {
   template: "./src/Index.tsx",
  },
