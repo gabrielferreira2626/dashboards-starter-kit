@@ -1,4 +1,4 @@
-# Starter Kit to Develop Widgets for Dashboards
+# @Findmore Starter Kit to Develop Widgets for Dashboards 
 
 **Descrição curta:** Uma breve descrição do propósito do projeto.
 
